@@ -114,7 +114,7 @@ i {
 }
 
 .heart {
-    font-size: 28px;
+    font-size: 34px;
     color: pink;
 }
 
@@ -148,8 +148,8 @@ i {
 
 .checkmark {
     position: absolute;
-    top: 0;
-    left: 250px;
+    top: 4px;
+    left: 150px;
     height: 25px;
     width: 25px;
     background-color: #a0c9de;
@@ -157,6 +157,7 @@ i {
     border-style: solid;
     border-color: #374b9b;
     border-width: .5px;
+    transform: rotate(deg);
 }
 
 
@@ -170,7 +171,7 @@ i {
 /* When the radio button is checked, add a blue background */
 
 .container input:checked~.checkmark {
-    background-color: #fbaf00;
+    background-color: #ffb301;
     box-shadow: 5px 5px 5px #4f4f4f94;
 }
 
@@ -194,21 +195,20 @@ i {
 /* Style the indicator (dot/circle) */
 
 .container .checkmark:after {
-    top: 8px;
-    left: 8px;
-    width: 8px;
-    height: 8px;
-    border-radius: 90%;
-    background: #ffda82;
+    top: 7px;
+    left: 7px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #a0c9de;
     border-style: dotted;
-    border-color: #ffdaa8;
+    border-color: #374b9b;
     border-width: .5px;
-    box-shadow: 1px 1px 1px #4f4f4f;
 }
 
 input[type=text] {
     width: 90%;
-    padding: 8px 16px;
+    padding: 4px 16px;
     margin: 10px;
     box-sizing: border-box;
     border-style: solid;
@@ -220,7 +220,7 @@ input[type=text] {
 
 input[type=email] {
     width: 90%;
-    padding: 8px 16px;
+    padding: 4px 16px;
     margin: 10px;
     box-sizing: border-box;
     border-style: solid;
@@ -232,7 +232,7 @@ input[type=email] {
 
 select {
     width: 90%;
-    padding: 8px 16px;
+    padding: 4px 16px;
     margin: 10px;
     box-sizing: border-box;
     border-style: solid;
@@ -252,15 +252,21 @@ label {
 }
 
 .rotate90 {
-     transform: rotate(90deg);    
+    transform: rotate(90deg);
 }
-
 
 .rotate270 {
-     transform: rotate(270deg);    
+    transform: rotate(270deg);
 }
 
-
 .rotate180 {
-     transform: rotate(180deg);    
+    transform: rotate(180deg);
+}
+
+.rotate45 {
+    transform: rotate(45deg);
+}
+
+.rotate315 {
+    transform: rotate(315deg);
 }
