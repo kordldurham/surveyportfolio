@@ -1,272 +1,94 @@
-p {
-    text-shadow: 4px 4px 8px #4f4f4f, 1 1 8px #4f4f4f, 1 1 8px #4f4f4f;
-}
-
-html {
-    background: linear-gradient(270deg, #3a6e8a, #3a6e8a, #2e6583, #12242b, #090010, #000000, #000000, #f97c00, #f4bd05, #f1fe07, #f4bd05, #f97c00, #000000, #000000, #090010, #12242b, #2e6583, #3a6e8a, #3a6e8a);
-    color: #fbaf00;
-    font-size: 18px;
-    text-shadow: 4px 4px 8px #4f4f4f, 0 0 8px #4f4f4f, 0 0 8px #4f4f4f;
-}
-
-h1 {
-    font-size: 50px;
-    color: #fbaf00;
-    text-shadow: 5px 5px 8px #4f4f4f, 0 0 8px #4f4f4f, 0 0 8px #4f4f4f;
-    font-family: 'Play', sans-serif;
-}
-
-h2 {
-    font-size: 30px;
-    text-shadow: 5px 4px 4px #4f4f4f, 0 0 10px #4f4f4f, 0 0 5px #4f4f4f;
-    font-family: 'Play', sans-serif;
-}
-
-h3 {
-    font-size: 20px;
-    text-shadow: 5px 4px 4px #4f4f4f, 0 0 10px #4f4f4f, 0 0 5px #4f4f4f;
-    font-family: 'Play', sans-serif;
-}
-
-.fieldset {
-    margin: 15px 0px 15px 0px;
-    margin: 0 30% 0 30%;
-    min-width: 30%;
-    border-style: solid;
-    border-color: #ffaf09;
-    border-width: 2.62px;
-    background-color: #336f8e;
-    font-family: 'Pragati Narrow', sans-serif;
-    align-items: center;
-    box-shadow: 4px 4px 6px #4f4f4f;
-}
-
-input {
-    font-size: 16px;
-    font-family: 'Pragati Narrow', sans-serif;
-}
-
-select {
-    font-size: 16px;
-    font-family: 'Pragati Narrow', sans-serif;
-}
-
-option {
-    font-size: 16px;
-    font-family: 'Pragati Narrow', sans-serif;
-}
-
-textarea {
-    font-size: 10px;
-    font-family: 'Bungee', sans-serif;
-}
-
-.centxt {
-    text-align: center;
-}
-
-.button {
-    background-color: #21475c;
-    border: solid;
-    color: #fbaf00;
-    padding: 7px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    z-index: 1;
-    overflow-x: visible;
-    overflow-y: visible;
-    transform: scaleZ(2);
-    vertical-align: middle;
-    order: 1;
-    line-height: 5px;
-    margin-top: 25px;
-}
-
-.shadow {
-    box-shadow: 5px 5px 7px #4f4f4f;
-    ;
-}
-
-.tinytxt {
-    font-size: 8px;
-    text-shadow: 3px 3px 5px #4f4f4f, 0 0 4px #4f4f4f, 0 0 3px #4f4f4f;
-    font-family: 'DM Mono', cursive;
-    color: #283739;
-}
-
-.shrinktxt {
-    font-size: 14px;
-}
-
-.growtxt {
-    font-size: 20px;
-}
-
-.legtxt {
-    font-size: 24px;
-}
-
-i {
-    font-size: 50px;
-    right: 50px;
-}
-
-.heart {
-    font-size: 34px;
-    color: pink;
-}
-
-
-/* The container */
-
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-
-/* Hide the browser's default radio button */
-
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-
-/* Create a custom radio button */
-
-.checkmark {
-    position: absolute;
-    top: 4px;
-    left: 200px;
-    height: 25px;
-    width: 25px;
-    background-color: #a0c9de;
-    border-radius: 35%;
-    border-style: solid;
-    border-color: #374b9b;
-    border-width: .5px;
-    transform: rotate(deg);
-}
-
-
-/* On mouse-over, add a grey background color */
-
-.container:hover input~.checkmark {
-    background-color: #f1fe07;
-}
-
-
-/* When the radio button is checked, add a blue background */
-
-.container input:checked~.checkmark {
-    background-color: #ffb301;
-    box-shadow: 5px 5px 5px #4f4f4f94;
-}
-
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-
-/* Show the indicator (dot/circle) when checked */
-
-.container input:checked~.checkmark:after {
-    display: block;
-}
-
-
-/* Style the indicator (dot/circle) */
-
-.container .checkmark:after {
-    top: 7px;
-    left: 7px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: #a0c9de;
-    border-style: dotted;
-    border-color: #374b9b;
-    border-width: .5px;
-}
-
-input[type=text] {
-    width: 90%;
-    padding: 4px 16px;
-    margin: 10px;
-    box-sizing: border-box;
-    border-style: solid;
-    border-color: #fbaf00;
-    border-width: 2.5px;
-    box-shadow: 5px 5px 4px #4f4f4f;
-    ;
-}
-
-input[type=email] {
-    width: 90%;
-    padding: 4px 16px;
-    margin: 10px;
-    box-sizing: border-box;
-    border-style: solid;
-    border-color: #fbaf00;
-    border-width: 2.5px;
-    box-shadow: 5px 5px 4px #4f4f4f;
-    ;
-}
-
-select {
-    width: 90%;
-    padding: 4px 16px;
-    margin: 10px;
-    box-sizing: border-box;
-    border-style: solid;
-    border-color: #fbaf00;
-    border-width: 2.5px;
-    box-shadow: 5px 5px 4px #4f4f4f;
-    ;
-}
-
-legend {
-    text-shadow: 5px 5px 6.5px #4f4f4f, 0 0 2.25px #4f4f4f, 0 0 4.5px #4f4f4f;
-}
-
-;
-label {
-    text-shadow: 4px 4px 6px #4f4f4f, 0 0 4px #4f4f4f, 0 0 4px #4f4f4f;
-}
-
-.rotate90 {
-    transform: rotate(90deg);
-}
-
-.rotate270 {
-    transform: rotate(270deg);
-}
-
-.rotate180 {
-    transform: rotate(180deg);
-}
-
-.rotate45 {
-    transform: rotate(45deg);
-}
-
-.rotate315 {
-    transform: rotate(315deg);
-}
+<!DOCTYPE html>
+<link rel="stylesheet" href="SURVEY_PRETTY.css">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Mono&family=Merriweather:wght@700&family=Play&family=Pragati+Narrow&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script> 
+<html>
+    <main class="centxt">
+        <body>
+        <script></script>
+            <fieldset class="fieldset">
+                <h1>Customer Satisfaction Survey!</h1>
+                <h2>Your satisfaction with our service is VERY important to us!</h2> 
+                <h3>Any feedback you submit will be taken with the highest consideration, knowing there's really not much we can do about it!</h3>
+            </fieldset>
+            <form id="survey-form" method="post" class="" action="null">
+            <fieldset class="fieldset">
+            <legend class="legtxt">Before we get started:</legend><p class="growtxt">Just some brief information so we know who you are!</p><br>
+                <label><input size="15" class="shadow" type="text" name="F_name" placeholder="First Name?" required></label>
+                <label><input size="15" class="shadow" type="text" name="L_name" placeholder="Last Name?" required></label><br><br>
+                <label><input size="30" class="shadow" type="email" name="email" id="email" class="form-control" placeholder="Email?" required></label><br><br>
+                <label><input size="30" class="shadow" type="text" name="gender" placeholder="Gender?" required></label><br><br>
+                <label><input size="30" class="shadow" type="text" name="b_type" placeholder="Blood designation? (A, Z, AY, O², etc.)" required></label><br><br>
+                <label><input size="30" class="shadow" type="text" name="species" placeholder="Species?" required></label><br><br>
+                <label><input size="30" class="shadow" type="text" name="GIN" placeholder="Galactic Identifier Number?" required></label><br><br>
+                <label><input size="30" class="shadow" type="text" name="SDOB" placeholder="Stardate on your day of birth?" required></label><br><br>
+                <label><input class="shadow growtxt" type="checkbox" value="news" name="newsletter" checked required></label>Would you like to subscribe to our weekly newsletter "Living on Earth"?<br>
+                <p class="shrinktxt">(We promise not sell your personal data to 3rd party companies. You can trust us.)</p><br><br>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legtxt">Help us make your next stay forgettable! Let's begin:</legend>
+                <p class="growtxt">What is:</p>
+                <p>Your favorite active volcano or tectonic rift?</p>
+                <label ><input size="60" class="shadow" type="text" name="voltec"></label>
+                <p>Your favorite piece of aerospace legislation?</p>
+                <label><input size="60" class="shadow" type="text" name="aero_law"></label>
+                <p>Your favorite 4th dimentional shape?</p>
+                <label><input size="60" class="shadow" type="text" name="4_DimObj"></label>
+                <p>Your favorite recipe for anti-matter?</p>
+                <label><input size="60" class="shadow" type="text" name="ant_matter"></label>
+                <p>Your favorite launch code to sing in the shower?</p>
+                <label><input size="60" class="shadow" type="text" name="lau_codes"></label>
+                <p>Your favorite inherited recessive phenotype?</p>
+                <label><input size="60" class="shadow" type="text" name="inher_pheno"></label>
+                <p>Your least favorite deadly allergy?</p>
+                <label><input size="60" class="shadow" type="text" name="allergy"></label>
+                <p>Where do you like to drive alone on cloudless nights?</p>
+                <label><input size="60" class="shadow" type="text" name="drive" placeholder="(Coordinates only, please.)"></label><br><br>
+            </fieldset>
+            <fieldset class="fieldset">    
+                <legend class="legtxt">Your feedback helps us improve  YOUR experience!</legend><br>
+                <p class="growtxt">From the following list: </p><label for="percept">What level of perception have you achieved?</label><br>
+                 <select class="shadow" id="dropdown" name="perception">
+                    <option value="puny">What? I don't understand.</option>
+                    <option value="loser">Perception is meaningless.</option>
+                    <option value="5sense">The 5 Senses</option>
+                    <option value="minds_eye">The 3rd Eye</option>
+                    <option value="time_spac">I can see through time and space.</option>
+                    <option value="omni">I. Am. Omnipresent. I. See. All.</option>
+                </select><br><br>
+                </fieldset>
+                <fieldset class="fieldset">
+                <legend class="legtxt">Things you may, or may not, have experienced since our visit:</legend>
+                <p class="growtxt">In the past week which of the following has happened to you?</p> </p class="shrinktxt">(please select all that apply)</p>
+                <label class="container">Prophetic Visions<input class="centxt shadow" type="checkbox" value="vis" name="visions"><span class="checkmark"></span></label>
+                <label class="container">Paranoia<input class="centxt shadow" type="checkbox" value="para" name="paranoia"><span class="checkmark"></span></label>
+                <label class="container">A.Y.Y.L.M.A.O Disorder<input class="centxt shadow" type="checkbox" value="ay" name="ayy"><span class="checkmark"></span></label>
+                <label class="container">"Abductions"<input class="centxt shadow" type="checkbox" value="ab" name="abductions"><span class="checkmark"></span></label>
+                <label class="container">Bloodlust<input class="centxt shadow" type="checkbox" value="ins" name="bloodlust"><span class="checkmark"></span></label>
+                <label class="container">Anxiety<input class="centxt shadow" type="checkbox" value="anx" name="anxiety"><span class="checkmark"></span></label>
+                <label class="container">Pyrokinesis<input class="centxt shadow" type="checkbox" value="pyo" name="pyrokinesis"><span class="checkmark"></span></label>
+                <label class="container">Insomnia<input class="centxt shadow" type="checkbox" value="ins" name="insomnia"><span class="checkmark"></span></label>
+                <label class="container">Death<input class="centxt shadow" type="checkbox" value="ins" name="death"><span class="checkmark"></span></label>
+                </fieldset>
+                <fieldset class="fieldset">
+                <legend class="legtxt">And finally:</legend>
+                <p class="growtxt">How are you feeling today?</p><p class="shrinktxt">(This is vitally important information, please be as accurate as possible.)</p></br>
+                <label class="container"><i class="fas fa-wave-square rotate270"></i><input class="shadow" id="feeling" type="radio" value="1" name="1-5"><span class="checkmark"></span></label>
+                <label class="container"><i class="fab fa-affiliatetheme rotate315"></i><input class="shadow" id="feeling" type="radio" value="2" name="1-5"><span class="checkmark"></span></label>
+                <label class="container"><i class="fab fa-confluence rotate90"></i><input class="shadow" id="feeling" type="radio" value="3" name="1-5"><span class="checkmark"></span></label>
+                <label class="container"><i class="fab fa-jira"></i><input class="shadow" id="feeling" type="radio" value="4" name="1-5"><span class="checkmark"></span></label>
+                <label class="container"><i class="fas fa-signature rotate315"></i><input class="shadow" id="feeling" type="radio" value="5" name="1-5"><span class="checkmark"></span></label><br><br>
+            </fieldset>    
+            <fieldset  class="fieldset">
+                <legend class="legtxt">Comments or concerns?</legend>
+                <p class="growtxt">Please, take your time. We really value your feedback. Write us a heartfelt decaration of adoration!</p>
+                <i class="fas fa-heart heart"></i><br>
+                <textarea class="shadow" name="message" rows="5" cols="35"></textarea><br><br>
+                <p class="tinytxt">(We most likely will not read it, we just want you to feel comforted. Oh, and sorry about the probing. Hope you forgive us.)</p>
+            </fieldset>
+                <button class="button shadow" id="submit" onclick="alert('Survey Submitted!
+                "Foolish Human! We LIED about NOT selling your data! Too late now! Bwahahaha!!")" target="null" type="null">SUBMIT<br><p class="tinytxt">to us, humans.</p></button></a>
+            </form>
+        </body>
+    </main>
+</html>
