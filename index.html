@@ -11,17 +11,17 @@
                 <h2>Your satisfaction with our service is VERY important to us!</h2> 
                 <h3>Any feedback you submit will be taken with the highest consideration, knowing there's really not much we can do about it!</h3>
             </fieldset>
-            <form id="survey-form" method="post" class="" action="null">
+            <form id="survey-form" method="get" class="" action="/form_submit.php">
             <fieldset class="fieldset">
             <legend class="legtxt">Before we get started:</legend><p class="growtxt">Just some brief information so we know who you are!</p><br>
-                <label><input size="15" class="shadow" type="text" name="F_name" placeholder="First Name?" required></label>
-                <label><input size="15" class="shadow" type="text" name="L_name" placeholder="Last Name?" required></label><br><br>
-                <label><input size="30" class="shadow" type="email" name="email" id="email" class="form-control" placeholder="Email?" required></label><br><br>
-                <label><input size="30" class="shadow" type="text" name="gender" placeholder="Gender?" required></label><br><br>
-                <label><input size="30" class="shadow" type="text" name="b_type" placeholder="Blood designation? (A, Z, AY, O², etc.)" required></label><br><br>
-                <label><input size="30" class="shadow" type="text" name="species" placeholder="Species?" required></label><br><br>
-                <label><input size="30" class="shadow" type="text" name="GIN" placeholder="Galactic Identifier Number?" required></label><br><br>
-                <label><input size="30" class="shadow" type="text" name="SDOB" placeholder="Stardate on your day of birth?" required></label><br><br>
+                <label><input size="15" class="shadow" type="text" name="F_name" placeholder="First Name" required></label>
+                <label><input size="15" class="shadow" type="text" name="L_name" placeholder="Last Name" required></label><br><br>
+                <label><input size="30" class="shadow" type="email" name="email" id="email" class="form-control" placeholder="Email" required></label><br><br>
+                <label><input size="30" class="shadow" type="text" name="gender" placeholder="Gender" required></label><br><br>
+                <label><input size="30" class="shadow" type="text" name="b_type" placeholder="Blood designation (A, Z, AY, O², etc.)" required></label><br><br>
+                <label><input size="30" class="shadow" type="text" name="species" placeholder="Species" required></label><br><br>
+                <label><input size="30" class="shadow" type="text" name="GIN" placeholder="Galactic Identifier Number" required></label><br><br>
+                <label><input size="30" class="shadow" type="text" name="SDOB" placeholder="Stardate on your day of birth" required></label><br><br>
                 <label><input class="shadow growtxt" type="checkbox" value="news" name="newsletter" checked required></label>Would you like to subscribe to our weekly newsletter "Living on Earth"?<br>
                 <p class="shrinktxt">(We promise not sell your personal data to 3rd party companies. You can trust us.)</p><br><br>
             </fieldset>
@@ -87,7 +87,7 @@
                 <p class="tinytxt">(We most likely will not read it, we just want you to feel comforted. Oh, and sorry about the probing. Hope you forgive us.)</p>
             </fieldset>
                 <button class="button shadow" id="submit" onclick="alert('Survey Submitted!
-                "Foolish Human! We LIED about NOT selling your data! Too late now! Bwahahaha!!")" target="null" type="null">SUBMIT<br><p class="tinytxt">to us, humans.</p></button></a>
+                "Foolish Human! We LIED about NOT selling your data! Too late now! Bwahahaha!!")" href="https://kordldurham.github.io/SparkyArcingPotato/" target="_blank" type="submit">SUBMIT<br><p class="tinytxt">to us, humans.</p></button></a>
             </form>
         </body>
     </main>
