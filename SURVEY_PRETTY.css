@@ -6,7 +6,6 @@ html {
     background: linear-gradient(270deg, #3a6e8a, #2e6583, #090010, #000000, #000000, #f97c00, #f4bd05, #f1fe07, #f4bd05, #f97c00, #000000, #000000, #090010, #2e6583, #3a6e8a);
     color: #fbaf00;
     font-size: 18px;
-    text-shadow: 4px 4px 6px #000000, 1 0 25px #000000, 0 1 5px #000000;
 }
 
 h1 {
