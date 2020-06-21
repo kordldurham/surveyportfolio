@@ -57,7 +57,7 @@ option {
 }
 
 textarea {
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Bungee', sans-serif;
 }
 
@@ -249,4 +249,18 @@ legend {
 ;
 label {
     text-shadow: 4px 4px 6px #4f4f4f, 0 0 4px #4f4f4f, 0 0 4px #4f4f4f;
+}
+
+.rotate90 {
+     transform: rotate(90deg);    
+}
+
+
+.rotate270 {
+     transform: rotate(270deg);    
+}
+
+
+.rotate180 {
+     transform: rotate(180deg);    
 }
