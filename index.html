@@ -1,94 +1,145 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="SURVEY_PRETTY.css">
-<link href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Mono&family=Merriweather:wght@700&family=Play&family=Pragati+Narrow&display=swap" rel="stylesheet"> 
-<script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script> 
 <html>
-    <main class="centxt">
-        <body>
-        <script></script>
-            <fieldset class="fieldset">
-                <h1>Customer Satisfaction Survey!</h1>
-                <h2>Your satisfaction with our service is VERY important to us!</h2> 
-                <h3>Any feedback you submit will be taken with the highest consideration, knowing there's really not much we can do about it!</h3>
-            </fieldset>
-            <form id="survey-form" method="get" class="" action="/form_submit.php">
-            <fieldset class="fieldset">
-            <legend class="legtxt">Before we get started:</legend><p class="growtxt">Just some brief information so we know who you are!</p><br>
-                <label><input size="15" class="shadow" type="text" name="F_name" placeholder="First Name" required></label>
-                <label><input size="15" class="shadow" type="text" name="L_name" placeholder="Last Name" required></label><br><br>
-                <label><input size="30" class="shadow" type="email" name="email" id="email" class="form-control" placeholder="Email" required></label><br><br>
-                <label><input size="30" class="shadow" type="text" name="gender" placeholder="Gender" required></label><br><br>
-                <label><input size="30" class="shadow" type="text" name="b_type" placeholder="Blood designation (A, Z, AY, O², etc.)" required></label><br><br>
-                <label><input size="30" class="shadow" type="text" name="species" placeholder="Species" required></label><br><br>
-                <label><input size="30" class="shadow" type="text" name="GIN" placeholder="Galactic Identifier Number" required></label><br><br>
-                <label><input size="30" class="shadow" type="text" name="SDOB" placeholder="Stardate on your day of birth" required></label><br><br>
-                <label><input class="shadow growtxt" type="checkbox" value="news" name="newsletter" checked required></label>Would you like to subscribe to our weekly newsletter "Living on Earth"?<br>
-                <p class="shrinktxt">(We promise not sell your personal data to 3rd party companies. You can trust us.)</p><br><br>
-            </fieldset>
-            <fieldset class="fieldset">
-                <legend class="legtxt">Help us make your next stay forgettable! Let's begin:</legend>
-                <p class="growtxt">What is:</p>
-                <p>Your favorite active volcano or tectonic rift?</p>
-                <label ><input size="60" class="shadow" type="text" name="voltec"></label>
-                <p>Your favorite piece of aerospace legislation?</p>
-                <label><input size="60" class="shadow" type="text" name="aero_law"></label>
-                <p>Your favorite 4th dimentional shape?</p>
-                <label><input size="60" class="shadow" type="text" name="4_DimObj"></label>
-                <p>Your favorite recipe for anti-matter?</p>
-                <label><input size="60" class="shadow" type="text" name="ant_matter"></label>
-                <p>Your favorite launch code to sing in the shower?</p>
-                <label><input size="60" class="shadow" type="text" name="lau_codes"></label>
-                <p>Your favorite inherited recessive phenotype?</p>
-                <label><input size="60" class="shadow" type="text" name="inher_pheno"></label>
-                <p>Your least favorite deadly allergy?</p>
-                <label><input size="60" class="shadow" type="text" name="allergy"></label>
-                <p>Where do you like to drive alone on cloudless nights?</p>
-                <label><input size="60" class="shadow" type="text" name="drive" placeholder="(Coordinates only, please.)"></label><br><br>
-            </fieldset>
-            <fieldset class="fieldset">    
-                <legend class="legtxt">Your feedback helps us improve  YOUR experience!</legend><br>
-                <p class="growtxt">From the following list: </p><label for="percept">What level of perception have you achieved?</label><br>
-                 <select class="shadow" id="dropdown" name="perception">
-                    <option value="puny">What? I don't understand.</option>
-                    <option value="loser">Perception is meaningless.</option>
-                    <option value="5sense">The 5 Senses</option>
-                    <option value="minds_eye">The 3rd Eye</option>
-                    <option value="time_spac">I can see through time and space.</option>
-                    <option value="omni">I. Am. Omnipresent. I. See. All.</option>
-                </select><br><br>
-                </fieldset>
-                <fieldset class="fieldset">
-                <legend class="legtxt">Things you may, or may not, have experienced since our visit:</legend>
-                <p class="growtxt">In the past week which of the following has happened to you?</p> </p class="shrinktxt">(please select all that apply)</p>
-                <label class="container">Prophetic Visions<input class="centxt shadow" type="checkbox" value="vis" name="visions"><span class="checkmark"></span></label>
-                <label class="container">Paranoia<input class="centxt shadow" type="checkbox" value="para" name="paranoia"><span class="checkmark"></span></label>
-                <label class="container">A.Y.Y.L.M.A.O Disorder<input class="centxt shadow" type="checkbox" value="ay" name="ayy"><span class="checkmark"></span></label>
-                <label class="container">"Abductions"<input class="centxt shadow" type="checkbox" value="ab" name="abductions"><span class="checkmark"></span></label>
-                <label class="container">Bloodlust<input class="centxt shadow" type="checkbox" value="ins" name="bloodlust"><span class="checkmark"></span></label>
-                <label class="container">Anxiety<input class="centxt shadow" type="checkbox" value="anx" name="anxiety"><span class="checkmark"></span></label>
-                <label class="container">Pyrokinesis<input class="centxt shadow" type="checkbox" value="pyo" name="pyrokinesis"><span class="checkmark"></span></label>
-                <label class="container">Insomnia<input class="centxt shadow" type="checkbox" value="ins" name="insomnia"><span class="checkmark"></span></label>
-                <label class="container">Death<input class="centxt shadow" type="checkbox" value="ins" name="death"><span class="checkmark"></span></label>
-                </fieldset>
-                <fieldset class="fieldset">
-                <legend class="legtxt">And finally:</legend>
-                <p class="growtxt">How are you feeling today?</p><p class="shrinktxt">(This is vitally important information, please be as accurate as possible.)</p></br>
-                <label class="container"><i class="fas fa-wave-square rotate270"></i><input class="shadow" id="feeling" type="radio" value="1" name="1-5"><span class="checkmark"></span></label>
-                <label class="container"><i class="fab fa-affiliatetheme rotate315"></i><input class="shadow" id="feeling" type="radio" value="2" name="1-5"><span class="checkmark"></span></label>
-                <label class="container"><i class="fab fa-confluence rotate90"></i><input class="shadow" id="feeling" type="radio" value="3" name="1-5"><span class="checkmark"></span></label>
-                <label class="container"><i class="fab fa-jira"></i><input class="shadow" id="feeling" type="radio" value="4" name="1-5"><span class="checkmark"></span></label>
-                <label class="container"><i class="fas fa-signature rotate315"></i><input class="shadow" id="feeling" type="radio" value="5" name="1-5"><span class="checkmark"></span></label><br><br>
-            </fieldset>    
-            <fieldset  class="fieldset">
-                <legend class="legtxt">Comments or concerns?</legend>
-                <p class="growtxt">Please, take your time. We really value your feedback. Write us a heartfelt decaration of adoration!</p>
-                <i class="fas fa-heart heart"></i><br>
-                <textarea class="shadow" name="message" rows="5" cols="35"></textarea><br><br>
-                <p class="tinytxt">(We most likely will not read it, we just want you to feel comforted. Oh, and sorry about the probing. Hope you forgive us.)</p>
-            </fieldset>
-                <button class="button shadow" id="submit" onclick="alert('Survey Submitted!
-                "Foolish Human! We LIED about NOT selling your data! Too late now! Bwahahaha!!")" href="https://kordldurham.github.io/SparkyArcingPotato/" target="_blank" type="submit">SUBMIT<br><p class="tinytxt">to us, humans.</p></button></a>
+    <head>
+        <!--Meta-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Mono&family=Merriweather:wght@700&family=Play&family=Pragati+Narrow&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script> 
+        <title>Customer Satisfaction Survey!</title>
+    </head>
+    <main>
+        <body class="bg-info">
+            <!--Navbar-->
+            <nav class="fixed-top navbar container-flex flex-row bg-dark text-light">
+                <div class="d-inline-block border-left border-right border-light">
+                    <span class="navbar-brand h1 pl-3">KD Web Dev</span>
+                </div>
+                    <div class="dropdown flex-grow-0 ml-2">
+                        <button class="btn dropdown-toggle float-left btn-lg btn-outline-secondary text-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</button>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="ddprojects">
+                                <a class="dropdown-item text-light" id="wednesday" href="https://kordldurham.github.io/SparkyArcingPotato/" target="_blank">Landing Page</a>
+                                <a class="dropdown-item text-light" id="wiki" href="https://kordldurham.github.io/redesigned-doodle/" target="_blank">Wiki</a>
+                                <a class="dropdown-item text-light" id="clock" href="https://kordldurham.github.io/impractical_clock/" target="_blank">Clock</a>
+                                <a class="dropdown-item text-light" id="survey" href="https://kordldurham.github.io/surveyportfolio/" target="_blank">Survey</a>
+                                <a class="dropdown-item text-light" id="directory" href="https://kordldurham.github.io/special-adventure/" target="_blank">Directory</a>
+                            </div>
+                    </div>
+                    <div class="dropdown flex-grow-1 ml-2">
+                        <button class="btn dropdown-toggle btn-lg btn-outline-secondary text-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Certifications</button>
+                            <div class="dropdown-menu bg-dark text-light" aria-labelledby="dropdownCerts">
+                                <a class="dropdown-item text-light" href="https://www.freecodecamp.org/certification/kordldurham/responsive-web-design" target="_blank">Responsive Web Design</a>
+                                <a class="dropdown-item text-light style=color:grey"  href="#"><s>Front End Development</s></a>
+                            </div>
+                    </div>
+                    <div class="dropdown flex-grow ml-2 float-right">
+                        <button class="btn dropdown-toggle btn-lg btn-outline-secondary text-light pull-left" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</button>
+                            <div class="dropdown-menu bg-dark text-light" aria-labelledby="dropdownContact">
+                                <a class="dropdown-item text-light" id="gitHubLink" href="https://github.com/kordldurham" target="_blank">GitHub</a>
+                                <a class="dropdown-item text-light" id="emailLink" href="mail:devkorddurham@gmail.com" target="_blank">Email</a>
+                                <a class="dropdown-item text-light" id="redditLink" href="https://www.reddit.com/user/SparkyArcingPotato" target="_blank">Reddit</a>
+                                <a class="dropdown-item text-light" id="paypalLink"  href="https://paypal.me/SparkyArcingPotato?locale.x=en_US" target="_blank">Donations</a>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container flex-column text-center" style="width:65%">
+            <form id="survey-form" method="get" class="" action="">
+                <div class="container">
+                    <h1>Customer Satisfaction Survey!</h1>
+                    <h2>Your satisfaction with our service is VERY important to us!</h2> 
+                    <h3>Any feedback you submit will be taken with the highest consideration, knowing there's really not much we can do about it!</h3>
+                </div>
+                <div class="container border-warning rounded shadow bg-primary text-warning mt-3">
+                    <legend class="float-left">Before we get started:</legend><p class="">Just some brief information so we know who you are!</p><br>
+                        <label><input id="fName" size="25" class="" type="text" name="F_name" placeholder="First Name" required></label>
+                        <label><input id="lName"size="25" class="" type="text" name="L_name" placeholder="Last Name" required></label><br><br>
+                        <label><input id="eMail"size="30" class="" type="email" name="email" id="email" class="form-control" placeholder="Email" required></label><br><br>
+                        <label><input id="gender"size="30" class="" type="text" name="gender" placeholder="Gender" required></label><br><br>
+                        <label><input id="btype"size="30" class="" type="text" name="b_type" placeholder="Blood designation (A, Z, AY, O², etc.)" required></label><br><br>
+                        <label><input id="species"size="30" class="" type="text" name="species" placeholder="Species" required></label><br><br>
+                        <label><input id="GIN" size="30" class="" type="text" name="GIN" placeholder="Galactic Identifier Number" required></label><br><br>
+                        <label><input id="sDoB"size="30" class="" type="text" name="SDoB" placeholder="Stardate on your day of birth" required></label><br><br>
+                        <label><input id="newsletter"class="" type="checkbox" value="news" name="newsletter" required></label>Would you like to subscribe to our weekly newsletter "Living on Earth"?<br>
+                        <p class="shrinktxt">(We promise not sell your personal data to 3rd party companies. You can trust us.)</p><br><br>
+                </div>
+                <div class="container border-warning rounded shadow bg-primary text-warning mt-3">
+                    <legend class="float-left">Help us make your next stay forgettable! Let's begin:</legend>
+                        <p class="">What is:</p>
+                        <p>Your favorite active volcano or tectonic rift?</p>
+                        <label ><input size="60" class="" type="text" name="voltec" required></label>
+                        <p>Your favorite piece of aerospace legislation?</p>
+                        <label><input size="60" class="" type="text" name="aero_law" required></label>
+                        <p>Your favorite 4th dimentional shape?</p>
+                        <label><input size="60" class="" type="text" name="4_DimObj" required></label>
+                        <p>Your favorite recipe for anti-matter?</p>
+                        <label><input size="60" class="" type="text" name="ant_matter" required></label>
+                        <p>Your favorite launch code to sing in the shower?</p>
+                        <label><input size="60" class="" type="text" name="lau_codes" required></label>
+                        <p>Your favorite inherited recessive phenotype?</p>
+                        <label><input size="60" class="" type="text" name="inher_pheno" required></label>
+                        <p>Your least favorite deadly allergy?</p>
+                        <label><input size="60" class="" type="text" name="allergy" required></label>
+                        <p>Where do you like to drive alone on cloudless nights?</p>
+                        <label><input size="60" class="" type="text" name="drive" placeholder="(Coordinates only, please.)" required></label><br><br>
+                </div>
+                <div class="container border-warning rounded shadow bg-primary text-warning mt-3">    
+                    <legend class="float-left">Your feedback helps us improve  YOUR experience!</legend><br>
+                        <p class="">From the following list: </p><label for="percept">What level of perception have you achieved?</label><br>
+                        <select class="" id="dropdown" name="perception" required>
+                            <option value="puny">What? I don't understand.</option>
+                            <option value="loser">Perception is meaningless.</option>
+                            <option value="5sense">The 5 Senses</option>
+                            <option value="minds_eye">The 3rd Eye</option>
+                            <option value="time_spac">I can see through time and space.</option>
+                            <option value="omni">I. Am. Omnipresent. I. See. All.</option>
+                        </select><br><br>
+                </div>
+                <div class="container border-warning rounded shadow bg-primary text-warning mt-3">
+                    <legend class="float-left">Things you may, or may not, have experienced since our visit:</legend>
+                        <p class="">In the past week which of the following has happened to you?</p> </p class="shrinktxt">(please select all that apply)</p>
+                        <div>
+                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="vis" name="visions">Prophetic Visions<span class="checkmark"></span></label>
+                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="para" name="paranoia"><span class="checkmark">Paranoia</span></label>
+                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="ay" name="ayy"><span class="checkmark">A.Y.Y.L.M.A.O Disorder</span></label>
+                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="ab" name="abductions"><span class="checkmark">"Abductions"</span></label>
+                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="ins" name="bloodlust"><span class="checkmark">Bloodlust</span></label>
+                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="anx" name="anxiety"><span class="checkmark">Anxiety</span></label>
+                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="pyo" name="pyrokinesis"><span class="checkmark">Pyrokinesis</span></label>
+                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="ins" name="insomnia"><span class="checkmark">Insomnia</span></label>
+                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="ins" name="death"><span class="checkmark">Death</span></label>
+                        </div>
+                </div>
+                <div class="container border-warning rounded shadow bg-primary text-warning mt-3 ">
+                    <legend class="float-left">And finally:</legend>
+                        <p class="">How are you feeling today?</p><p class="shrinktxt">(This is vitally important information, please be as accurate as possible.)</p></br>
+                        <label class="checkcont form-check-label"><i class="fas fa-wave-square rotate270"></i><input class="form-check-input" id="feeling" type="radio" value="1" name="1-5"><span class="checkmark"></span></label>
+                        <label class="checkcont form-check-label"><i class="fab fa-affiliatetheme rotate315"></i><input class="form-check-input" id="feeling" type="radio" value="2" name="1-5"><span class="checkmark"></span></label>
+                        <label class="checkcont form-check-label"><i class="fab fa-confluence rotate90"></i><input class="form-check-input" id="feeling" type="radio" value="3" name="1-5"><span class="checkmark"></span></label>
+                        <label class="checkcont form-check-label"><i class="fab fa-jira"></i><input class="form-check-input" id="feeling" type="radio" value="4" name="1-5"><span class="checkmark"></span></label>
+                        <label class="checkcont form-check-label"><i class="fas fa-signature rotate315"></i><input class="form-check-input" id="feeling" type="radio" value="5" name="1-5"><span class="checkmark"></span></label><br><br>
+                </div>
+                <div class="container border-warning rounded shadow bg-primary text-warning mt-3 my-n5 d-inline-block">
+                    <legend class="float-left">Comments or concerns?</legend>
+                        <p class="">Please, take your time. We really value your feedback. Write us a heartfelt decaration of adoration!</p>
+                        <i class="fas fa-heart heart"></i><br>
+                        <textarea class="" name="message" rows="5" cols="35"></textarea><br><br>
+                        <p class="">(We most likely will not read it, we just want you to feel comforted. Oh, and sorry about the probing. Hope you forgive us.)</p>
+                </div>
+                <div class="container d-inline-block bg-primary">
+                    <button class="btn text-primary btn-info btn-outline-warning btn-lg my-3" id="submit" onclick="alert('Survey Submitted!
+                    "Foolish Human! We LIED about NOT selling your data! Too late now! Bwahahaha!!")" formtarget="_parent" type="submit" target="_blank">SUBMIT</button></a>
+                </div>
             </form>
+            </div>
+            <script src="/index.js"></script>
+             <!--Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         </body>
-    </main>
+    </main>    
 </html>
