@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!--Bootstrap CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="index.css?v=survey-controls-and-form-3">
+        <link rel="stylesheet" href="index.css?v=survey-submission-layout-4">
         <link href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Mono&family=Merriweather:wght@700&family=Play&family=Pragati+Narrow&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script> 
         <title>Customer Satisfaction Survey!</title>
@@ -129,7 +129,8 @@
                             <label class="feeling-option" title="Feeling 4"><input type="radio" name="1-5" value="4" aria-label="Feeling 4"><i class="fab fa-jira" aria-hidden="true"></i></label>
                             <label class="feeling-option" title="Feeling 5"><input type="radio" name="1-5" value="5" aria-label="Feeling 5"><i class="fas fa-signature ro315" aria-hidden="true"></i></label>
                         </div>
-                <div class="container border-warning rounded shadow bg-primary text-warning mt-3 my-n5 d-inline-block">
+                </div>
+                <div class="container border-warning rounded shadow bg-primary text-warning mt-3 survey-comments">
                     <legend class="float-left">Comments or concerns?</legend>
                         <p class="">Please, take your time. We really value your feedback. Write us a heartfelt decaration of adoration!</p>
                         <i class="fas fa-heart heart"></i><br>
@@ -138,10 +139,11 @@
                 </div>
                 <div class="container d-inline-block bg-primary">
                     <button class="btn text-primary btn-info btn-outline-warning btn-lg my-3" id="submit" type="submit">SUBMIT</button>
+                    <p id="survey-status" class="survey-status" role="status" aria-live="polite" hidden></p>
                 </div>
             </form>
             </div>
-            <script src="/index.js"></script>
+            <script src="survey-submit.js?v=1" defer></script>
              <!--Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
