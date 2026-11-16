@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!--Bootstrap CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="index.css?v=symptoms-fix-1">
+        <link rel="stylesheet" href="index.css?v=survey-controls-and-form-3">
         <link href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Mono&family=Merriweather:wght@700&family=Play&family=Pragati+Narrow&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script> 
         <title>Customer Satisfaction Survey!</title>
@@ -46,7 +46,12 @@
                 </div>
             </nav>
             <div class="container flex-column text-center" style="width:65%">
-            <form id="survey-form" method="get" class="" action="">
+            <form id="survey-form" method="POST" action="https://formsubmit.co/devkorddurham@gmail.com">
+                <input type="hidden" name="_subject" value="Alien Abduction Customer Satisfaction Survey — New response">
+                <input type="hidden" name="_next" value="https://kordldurham.github.io/surveyportfolio/thanks.html">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_url" value="https://kordldurham.github.io/surveyportfolio/">
+                <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
                 <div class="container">
                     <h1>Customer Satisfaction Survey!</h1>
                     <h2>Your satisfaction with our service is VERY important to us!</h2> 
@@ -115,13 +120,15 @@
                 </div>
                 <div class="container border-warning rounded shadow bg-primary text-warning mt-3 ">
                     <legend class="float-left">And finally:</legend>
-                        <p class="">How are you feeling today?</p><p class="shrinktxt">(This is vitally important information, please be as accurate as possible.)</p></br>
-                        <label class="checkcont form-check-label"><i class="fas fa-wave-square rotate270"></i><input class="form-check-input" id="feeling" type="radio" value="1" name="1-5"><span class="checkmark"></span></label>
-                        <label class="checkcont form-check-label"><i class="fab fa-affiliatetheme rotate315"></i><input class="form-check-input" id="feeling" type="radio" value="2" name="1-5"><span class="checkmark"></span></label>
-                        <label class="checkcont form-check-label"><i class="fab fa-confluence rotate90"></i><input class="form-check-input" id="feeling" type="radio" value="3" name="1-5"><span class="checkmark"></span></label>
-                        <label class="checkcont form-check-label"><i class="fab fa-jira"></i><input class="form-check-input" id="feeling" type="radio" value="4" name="1-5"><span class="checkmark"></span></label>
-                        <label class="checkcont form-check-label"><i class="fas fa-signature rotate315"></i><input class="form-check-input" id="feeling" type="radio" value="5" name="1-5"><span class="checkmark"></span></label><br><br>
-                </div>
+                        <p>How are you feeling today?</p>
+                        <p class="shrinktxt">(This is vitally important information, please be as accurate as possible.)</p>
+                        <div class="feelings-options" role="radiogroup" aria-label="How are you feeling today?">
+                            <label class="feeling-option" title="Feeling 1"><input type="radio" name="1-5" value="1" aria-label="Feeling 1"><i class="fas fa-wave-square ro270" aria-hidden="true"></i></label>
+                            <label class="feeling-option" title="Feeling 2"><input type="radio" name="1-5" value="2" aria-label="Feeling 2"><i class="fab fa-affiliatetheme ro315" aria-hidden="true"></i></label>
+                            <label class="feeling-option" title="Feeling 3"><input type="radio" name="1-5" value="3" aria-label="Feeling 3"><i class="fab fa-confluence ro90" aria-hidden="true"></i></label>
+                            <label class="feeling-option" title="Feeling 4"><input type="radio" name="1-5" value="4" aria-label="Feeling 4"><i class="fab fa-jira" aria-hidden="true"></i></label>
+                            <label class="feeling-option" title="Feeling 5"><input type="radio" name="1-5" value="5" aria-label="Feeling 5"><i class="fas fa-signature ro315" aria-hidden="true"></i></label>
+                        </div>
                 <div class="container border-warning rounded shadow bg-primary text-warning mt-3 my-n5 d-inline-block">
                     <legend class="float-left">Comments or concerns?</legend>
                         <p class="">Please, take your time. We really value your feedback. Write us a heartfelt decaration of adoration!</p>
@@ -130,8 +137,7 @@
                         <p class="">(We most likely will not read it. We just want you to feel comforted.)</p>
                 </div>
                 <div class="container d-inline-block bg-primary">
-                    <button class="btn text-primary btn-info btn-outline-warning btn-lg my-3" id="submit" onclick="alert('Survey Submitted!
-                    "Foolish Human! We LIED about NOT selling your data! Too late now! Bwahahaha!!")" formtarget="_parent" type="submit" target="_blank">SUBMIT</button></a>
+                    <button class="btn text-primary btn-info btn-outline-warning btn-lg my-3" id="submit" type="submit">SUBMIT</button>
                 </div>
             </form>
             </div>
