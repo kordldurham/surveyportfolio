@@ -267,3 +267,12 @@ i {
     outline: 2px solid #fbaf00;
     outline-offset: 3px;
 }
+
+/* Keep the final feeling scale and comment panel as distinct stacked sections. */
+.feelings-options { padding-bottom: 24px; }
+.survey-comments { clear: both; display: block; }
+.survey-comments textarea { max-width: 100%; }
+.survey-status { max-width: 36rem; margin: 0 auto 1rem; padding: 12px; color: #fff; line-height: 1.5; }
+.survey-status[hidden] { display: none; }
+.survey-status.is-error { border: 2px solid #fbaf00; background: #7b1c1c; }
+.survey-status.is-info { border: 2px solid #fbaf00; background: #164e78; }
