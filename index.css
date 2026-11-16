@@ -222,3 +222,48 @@ i {
     outline: 2px solid #fbaf00;
     outline-offset: 3px;
 }
+
+/* Five surreal feeling choices: preserve their original symbols while making
+   each radio independently clickable, visible and keyboard accessible. */
+.feelings-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 10px 12px 24px;
+}
+.feeling-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 74px;
+    padding: 12px;
+    margin: 0;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+.feeling-option input[type="radio"] {
+    position: static;
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+    accent-color: #fbaf00;
+}
+.feeling-option i {
+    font-size: 32px;
+    line-height: 1.2;
+    color: #fbaf00;
+}
+.feeling-option:has(input:checked) {
+    border-color: #fbaf00;
+    background: rgba(0, 0, 0, .15);
+}
+.feeling-option:focus-within {
+    outline: 2px solid #fbaf00;
+    outline-offset: 3px;
+}
