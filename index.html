@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!--Bootstrap CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="index.css?v=symptoms-fix-1">
         <link href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Mono&family=Merriweather:wght@700&family=Play&family=Pragati+Narrow&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script> 
         <title>Customer Satisfaction Survey!</title>
@@ -99,17 +99,18 @@
                 </div>
                 <div class="container border-warning rounded shadow bg-primary text-warning mt-3">
                     <legend class="float-left">Things you may, or may not, have experienced since our visit:</legend>
-                        <p class="">In the past week which of the following has happened to you?</p> </p class="shrinktxt">(please select all that apply)</p>
-                        <div>
-                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="vis" name="visions">Prophetic Visions<span class="checkmark"></span></label>
-                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="para" name="paranoia"><span class="checkmark">Paranoia</span></label>
-                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="ay" name="ayy"><span class="checkmark">A.Y.Y.L.M.A.O Disorder</span></label>
-                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="ab" name="abductions"><span class="checkmark">"Abductions"</span></label>
-                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="ins" name="bloodlust"><span class="checkmark">Bloodlust</span></label>
-                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="anx" name="anxiety"><span class="checkmark">Anxiety</span></label>
-                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="pyo" name="pyrokinesis"><span class="checkmark">Pyrokinesis</span></label>
-                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="ins" name="insomnia"><span class="checkmark">Insomnia</span></label>
-                            <label class="checkcont form-check-label"><input class="form-check-input" type="checkbox" value="ins" name="death"><span class="checkmark">Death</span></label>
+                        <p>In the past week which of the following has happened to you?</p>
+                        <p class="shrinktxt">(Please select all that apply.)</p>
+                        <div class="symptoms-list">
+                            <label class="symptom-option"><input type="checkbox" value="vis" name="visions"><span>Prophetic Visions</span></label>
+                            <label class="symptom-option"><input type="checkbox" value="para" name="paranoia"><span>Paranoia</span></label>
+                            <label class="symptom-option"><input type="checkbox" value="ay" name="ayy"><span>A.Y.Y.L.M.A.O Disorder</span></label>
+                            <label class="symptom-option"><input type="checkbox" value="ab" name="abductions"><span>"Abductions"</span></label>
+                            <label class="symptom-option"><input type="checkbox" value="ins" name="bloodlust"><span>Bloodlust</span></label>
+                            <label class="symptom-option"><input type="checkbox" value="anx" name="anxiety"><span>Anxiety</span></label>
+                            <label class="symptom-option"><input type="checkbox" value="pyo" name="pyrokinesis"><span>Pyrokinesis</span></label>
+                            <label class="symptom-option"><input type="checkbox" value="ins" name="insomnia"><span>Insomnia</span></label>
+                            <label class="symptom-option"><input type="checkbox" value="ins" name="death"><span>Death</span></label>
                         </div>
                 </div>
                 <div class="container border-warning rounded shadow bg-primary text-warning mt-3 ">
@@ -126,7 +127,7 @@
                         <p class="">Please, take your time. We really value your feedback. Write us a heartfelt decaration of adoration!</p>
                         <i class="fas fa-heart heart"></i><br>
                         <textarea class="" name="message" rows="5" cols="35"></textarea><br><br>
-                        <p class="">(We most likely will not read it, we just want you to feel comforted. Oh, and sorry about the probing. Hope you forgive us.)</p>
+                        <p class="">(We most likely will not read it. We just want you to feel comforted.)</p>
                 </div>
                 <div class="container d-inline-block bg-primary">
                     <button class="btn text-primary btn-info btn-outline-warning btn-lg my-3" id="submit" onclick="alert('Survey Submitted!
