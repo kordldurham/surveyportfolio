@@ -276,3 +276,37 @@ i {
 .survey-status[hidden] { display: none; }
 .survey-status.is-error { border: 2px solid #fbaf00; background: #7b1c1c; }
 .survey-status.is-info { border: 2px solid #fbaf00; background: #164e78; }
+
+/* Responsive survey layout: preserve desktop design and make mobile usable. */
+.survey-shell { width: 65%; max-width: 1100px; padding-top: 90px; padding-bottom: 30px; }
+.survey-shell, .survey-shell * { box-sizing: border-box; }
+.survey-shell .container { max-width: 100%; }
+#survey-form > .container { padding: 18px 16px; margin-bottom: 12px; }
+#survey-form label { max-width: 100%; }
+#survey-form input[type="text"], #survey-form input[type="email"], #survey-form select, #survey-form textarea { max-width: 100%; }
+#survey-form input[type="text"], #survey-form input[type="email"] { width: min(100%, 420px); min-height: 42px; padding: 7px 10px; }
+#survey-form label:has(> input[type="text"]), #survey-form label:has(> input[type="email"]) { width: min(100%, 420px); }
+#survey-form select { width: min(100%, 420px); min-height: 44px; padding: 6px; }
+#survey-form textarea { width: min(100%, 560px); font-size: 16px; padding: 12px; }
+#survey-form legend { float: none !important; width: 100%; padding: 0; font-size: clamp(1.2rem, 3vw, 1.6rem); overflow-wrap: anywhere; }
+#survey-form p, #survey-form h1, #survey-form h2, #survey-form h3 { overflow-wrap: anywhere; }
+@media (max-width: 767px) {
+  .survey-shell { width: 100%; padding: 150px 10px 24px; }
+  nav.navbar { position: absolute !important; flex-wrap: wrap !important; justify-content: center; gap: 6px; padding: 10px 6px; }
+  nav.navbar > div { flex: 0 1 auto !important; margin: 0 !important; }
+  nav.navbar .navbar-brand { font-size: 1rem; margin: 0; padding: 5px !important; }
+  nav.navbar .btn { font-size: .85rem; padding: 8px; white-space: normal; }
+  nav.navbar .dropdown-menu { position: absolute; max-width: calc(100vw - 20px); }
+  #survey-form > .container { padding: 18px 12px; }
+  #survey-form h1 { font-size: clamp(1.8rem, 8vw, 2.6rem); }
+  #survey-form h2 { font-size: 1.3rem; }
+  #survey-form h3 { font-size: 1.05rem; }
+  #survey-form input[type="text"], #survey-form input[type="email"], #survey-form select, #survey-form textarea { font-size: 16px; width: 100%; }
+  #survey-form .symptoms-list { grid-template-columns: 1fr; padding: 10px 4px 20px; }
+  #survey-form .symptom-option { min-height: 44px; }
+  #survey-form .feelings-options { gap: 6px; padding: 10px 0 20px; }
+  #survey-form .feeling-option { min-width: 52px; padding: 8px 5px; flex: 1 1 52px; }
+  #survey-form .feeling-option i { font-size: 25px; }
+  #survey-form .survey-comments { margin-top: 12px; }
+}
+@media (max-width: 380px) { .survey-shell { padding-top: 170px; } nav.navbar .btn { font-size: .78rem; padding: 6px; } }
